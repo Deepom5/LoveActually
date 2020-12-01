@@ -1,6 +1,7 @@
 
 import React from "react";
-
+import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import IndexHeader from "components/Headers/IndexHeader.js";
 // reactstrap components
 import {   Button,
   Form,
@@ -13,6 +14,10 @@ import {   Button,
 
 function DemoFooter() {
   return (
+    <>
+    <ExamplesNavbar/>
+
+    <IndexHeader/>
     <footer className="footer footer-black footer-white">
       <Container>
 
@@ -89,6 +94,7 @@ function DemoFooter() {
      
       </Container>
     </footer>
+    </>
   );
 }
 
