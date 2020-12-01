@@ -9,55 +9,78 @@ import {   Card,  CardTitle, CardText, CardDeck,
 
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 
+
+
+
 //function carosel
 const carouselItems = [
   {src:
-   "https://i.ibb.co/yXbhm5J/picb.jpg",
+   require("assets/img/iGNiTE 1/picb.jpg"),
+
       altText: "Slide 1",
     caption: ""
   },
   {src:
-  "https://i.ibb.co/WHV8ShR/9.jpg",
+
+
+    require("assets/img/iGNiTE 1/pica.jpg"),
+
       altText: "Slide 2",
     caption: ""
   },
   {src:
-    "https://i.ibb.co/rynR0WS/7.jp",
+
+    require("assets/img/iGNiTE 1/picc.jpg"),
+
         altText: "Slide 3",
       caption: ""
     },
     {src:
-      "https://i.ibb.co/3N266Vz/pica.jpg",
+
+      require("assets/img/iGNiTE 1/picd.jpg"),
+
           altText: "Slide 4",
         caption: ""
       },
       {src:
-        "https://i.ibb.co/CPvypLc/8.jpg",
+
+        require("assets/img/iGNiTE 1/pice.jpg"),
+
             altText: "Slide 5",
           caption: ""
         },
         {src:
-          "https://i.ibb.co/Mks2PT7/picc.jpg",
+
+          require("assets/img/iGNiTE 1/picf.jpg"),
+
               altText: "Slide 6",
             caption: ""
           },
           {src:
-            "https://i.ibb.co/3dt50Kw/picd.jpg",
+
+            require("assets/img/iGNiTE 1/7.jpg"),
+
                 altText: "Slide 7",
               caption: ""
             },
             {src:
-              "https://i.ibb.co/7RmLLGM/pice.jpg",
+
+              require("assets/img/iGNiTE 1/8.jpg"),
+
                   altText: "Slide 8",
                 caption: ""
               },
               {src:
-                "https://i.ibb.co/XtwW1h1/picf.jpg",
+
+                require("assets/img/iGNiTE 1/9.jpg"),
+
                     altText: "Slide 9",
                   caption: ""
                 },
                                 
 ];
+
+
 
 function RegisterPage() {
  
