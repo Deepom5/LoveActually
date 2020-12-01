@@ -15,65 +15,47 @@ import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 //function carosel
 const carouselItems = [
   {src:
-   require("assets/img/iGNiTE 1/picb.jpg"),
-
+   "https://i.ibb.co/yXbhm5J/picb.jpg",
       altText: "Slide 1",
     caption: ""
   },
   {src:
-
-
-    require("assets/img/iGNiTE 1/pica.jpg"),
-
+  "https://i.ibb.co/WHV8ShR/9.jpg",
       altText: "Slide 2",
     caption: ""
   },
   {src:
-
-    require("assets/img/iGNiTE 1/picc.jpg"),
-
+    "https://i.ibb.co/rynR0WS/7.jp",
         altText: "Slide 3",
       caption: ""
     },
     {src:
-
-      require("assets/img/iGNiTE 1/picd.jpg"),
-
+      "https://i.ibb.co/3N266Vz/pica.jpg",
           altText: "Slide 4",
         caption: ""
       },
       {src:
-
-        require("assets/img/iGNiTE 1/pice.jpg"),
-
+        "https://i.ibb.co/CPvypLc/8.jpg",
             altText: "Slide 5",
           caption: ""
         },
         {src:
-
-          require("assets/img/iGNiTE 1/picf.jpg"),
-
+          "https://i.ibb.co/Mks2PT7/picc.jpg",
               altText: "Slide 6",
             caption: ""
           },
           {src:
-
-            require("assets/img/iGNiTE 1/7.jpg"),
-
+            "https://i.ibb.co/3dt50Kw/picd.jpg",
                 altText: "Slide 7",
               caption: ""
             },
             {src:
-
-              require("assets/img/iGNiTE 1/8.jpg"),
-
+              "https://i.ibb.co/7RmLLGM/pice.jpg",
                   altText: "Slide 8",
                 caption: ""
               },
               {src:
-
-                require("assets/img/iGNiTE 1/9.jpg"),
-
+                "https://i.ibb.co/XtwW1h1/picf.jpg",
                     altText: "Slide 9",
                   caption: ""
                 },
