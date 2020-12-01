@@ -82,9 +82,9 @@ function DemoFooter() {
             </ul>
           </nav>
           <div className="credits ml-auto">
-            <span className="copyright">
+            <span  className="copyright"><a href="https://www.linkedin.com/in/deepom-chowdhury-7b3651200/">
               © {new Date().getFullYear()}, made 
-               by Deepom Chowdhury
+               by Deepom Chowdhury</a>
             </span>
           </div>
              
