@@ -3,65 +3,85 @@ import React from "react";
 
 // reactstrap components
 import {   Card,  CardTitle, CardText, CardDeck,
-  CardSubtitle, CardBody,Row, Container } from "reactstrap";
+  CardSubtitle, CardBody,Row, Container,UncontrolledCarousel } from "reactstrap";
 
 // core components
-import DemoFooter from "components/Footers/DemoFooter.js";
+
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 
-<<<<<<< Updated upstream
-=======
+
+
+
 //function carosel
 const carouselItems = [
   {src:
    require("assets/img/iGNiTE 1/picb.jpg"),
+
       altText: "Slide 1",
     caption: ""
   },
   {src:
+
+
     require("assets/img/iGNiTE 1/pica.jpg"),
+
       altText: "Slide 2",
     caption: ""
   },
   {src:
+
     require("assets/img/iGNiTE 1/picc.jpg"),
+
         altText: "Slide 3",
       caption: ""
     },
     {src:
+
       require("assets/img/iGNiTE 1/picd.jpg"),
+
           altText: "Slide 4",
         caption: ""
       },
       {src:
+
         require("assets/img/iGNiTE 1/pice.jpg"),
+
             altText: "Slide 5",
           caption: ""
         },
         {src:
+
           require("assets/img/iGNiTE 1/picf.jpg"),
+
               altText: "Slide 6",
             caption: ""
           },
           {src:
+
             require("assets/img/iGNiTE 1/7.jpg"),
+
                 altText: "Slide 7",
               caption: ""
             },
             {src:
+
               require("assets/img/iGNiTE 1/8.jpg"),
+
                   altText: "Slide 8",
                 caption: ""
               },
               {src:
+
                 require("assets/img/iGNiTE 1/9.jpg"),
+
                     altText: "Slide 9",
                   caption: ""
                 },
                                 
 ];
 
->>>>>>> Stashed changes
+
+
 function RegisterPage() {
  
  
@@ -74,6 +94,9 @@ function RegisterPage() {
           backgroundImage: "url(" + require("assets/img/federico-beccari.jpg") + ")",
         }}
       >
+      
+      <UncontrolledCarousel items={carouselItems} />
+      </div>
         <div className="filter" />
         <Container>
         <br/><br/><br/><br/><br/><br/>
@@ -122,8 +145,8 @@ function RegisterPage() {
           <br/><br/>
         </Container>
        
-      </div>
-      <DemoFooter/>
+      
+   
     </>
   );
 }

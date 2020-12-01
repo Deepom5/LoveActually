@@ -1,6 +1,6 @@
 import React from 'react'
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+
 import { Card, CardBody, CardTitle, CardLink, Button } from 'reactstrap';
 
 const News = () => {
@@ -50,7 +50,7 @@ const News = () => {
            </CardBody>
            </Card>
         
-         <DemoFooter/>
+        
         </>
     )
 }

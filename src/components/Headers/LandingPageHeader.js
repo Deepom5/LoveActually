@@ -34,10 +34,11 @@ function LandingPageHeader() {
         data-parallax={true}
         ref={pageHeader}
       >
+      
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1>LoveActually</h1>
+            <h1>LoveActually.me</h1>
             <h3>Start discovering your one and only.</h3>
             <br />
             

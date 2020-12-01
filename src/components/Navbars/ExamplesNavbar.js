@@ -108,6 +108,11 @@ function ExamplesNavbar() {
           </NavItem>
 
           <NavItem>
+            <NavLink to="/footer" tag={Link}>
+               Contacts
+            </NavLink>
+          </NavItem>
+          <NavItem>
               <NavLink to="/index" tag={Link}>
                  Blog
               </NavLink>

@@ -1,6 +1,6 @@
 
 import React from "react";
-
+import vid from "../../assets/img/Ed Sheeran - Beautiful People (feat. Khalid) [Official Lyric Video].mp4"
 // reactstrap components
 import {
   Button,
@@ -18,7 +18,7 @@ import {
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+
 
 function LandingPage() {
   document.documentElement.classList.remove("nav-open");
@@ -102,10 +102,10 @@ instantly. 
               <Col md="4">
                 <div className="info">
                   <div className="icon icon-info">
-                    <i className="nc-icon nc-bulb-63" />
+                    <i className="nc-icon nc-chat-33" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Initative</h4>
+                    <h4 className="info-title">Greet</h4>
                     <p>
                     Our online initiative will help
                     able and PWDs to meet,
@@ -155,88 +155,54 @@ encouraging while making new friends.
             </Row>
           </Container>
         </div>
-        <div className="section section-dark text-center">
-          <Container>
-            <h2 className="title">Testimony</h2>
-            <Row>
-              <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/faces/clem-onojeghuo-3.jpg")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Henry Ford</CardTitle>
-                        
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                      This have been a boon to me , absolutely amazing.
-                    </p>
-                  </CardBody>
-                  
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/faces/joe-gardner-2.jpg")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Sophie West</CardTitle>
-                        
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                      A really nice idea.
-                    </p>
-                  </CardBody>
-            
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/faces/erik-lucatero-2.jpg")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Robert Orben</CardTitle>
-                        
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                     I love this platform.
-                    </p>
-                  </CardBody>
-                  
-                </Card>
-              </Col>
-            </Row>
-          </Container>
+        <div
+        style={{
+          backgroundImage:
+            "url(" + require("assets/img/pexels-elizaveta-dushechkina-3727149.jpg") + ")",
+          backgroundAttachment:"fixed"
+        }}        
+        className="section filter page-header content-center">
+        <div className="title-brand">
+        <Container>
+        <h1 className="presentation-title">Vision</h1>
+        <h2 className="presentation-subtitle text-center">
+        Bringing Behavioral Change
+      </h2>
+        </Container>
         </div>
+        </div>
+        <div className="section content-center  text-center">
+        <video autoPlay muted loop
+        style={{ 
+      width:"100%",
+      border:"0",
+      height:"100%",
+      objectFit:'cover',
+     zIndex:"-2"
+      
+    }}
+        >
+        <source src={vid} type="video/mp4"/>
+        </video>
+          
+        
+        
+          
+            <h1 >Mission</h1>
+            <h3>
+            Inclusivity with Equality</h3>
+            
+            
+         
+        
+           
+      
+        </div>
+
+      
         
       </div>
-      <DemoFooter />
+     
     </>
   );
 }
