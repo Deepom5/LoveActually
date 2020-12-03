@@ -205,6 +205,7 @@ encouraging while making new friends.
           }}>NEWS</h1>
          
         <br/><br/>
+        <Container>
         <CardColumns>
         <Card style={{width: '20rem'}}>
     <CardImg top src={require("assets/img/Media/Indian Graffiti.png")} alt="..." />
@@ -241,6 +242,7 @@ encouraging while making new friends.
     </CardBody>
 </Card>
 </CardColumns>
+</Container>
         </div>
       </div>
      
