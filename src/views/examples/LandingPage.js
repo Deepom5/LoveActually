@@ -1,15 +1,15 @@
 
 import React from "react";
-import vid from "../../assets/img/Ed Sheeran - Beautiful People (feat. Khalid) [Official Lyric Video].mp4"
+import vid from "../../assets/img/Ed Sheeran - Beautiful People (feat. Khalid) [Official Lyric Video] (online-video-cutter.com).mp4"
 // reactstrap components
 import {
   Button,
   Card,
   CardBody,
-  CardFooter,
-  CardTitle,
+  CardColumns,
+  CardLink,
   UncontrolledCollapse,
- 
+ CardImg, CardText,
   Container,
   Row,
   Col,
@@ -154,7 +154,33 @@ encouraging while making new friends.
           
             </Row>
           </Container>
-        </div>
+    
+        <div className="section content-center  text-center">
+        <video autoPlay muted loop
+        style={{ 
+      width:"100%",
+      border:"0",
+      height:"100%",
+      objectFit:'cover',
+     zIndex:"-2",
+     
+      
+    }}
+        >
+        <source src={vid} type="video/mp4"/>
+        </video>
+          
+        
+        
+          
+            <h1  style={{position:"absolute", top:"35%",left:"35%",color: "#1f1c1c", backgroundColor: "#f2f2f2", fontSize: "7vw", lineHeight: "7vw", fontWeight: "700", margin: "0 5px 24px", float: "left", padding: "10px", margin:" 0 5px 24px",  }}>MISSION</h1>
+            <h3 style={{position:"absolute", top:"45%",left:"30%",fontSize: "4vw", fontWeight: "300",backgroundColor: "#f2f2f2"}}>
+            Inclusivity with Equality</h3>
+            
+            </div>
+
+      
+            </div>
         <div
         style={{
           backgroundImage:
@@ -171,36 +197,51 @@ encouraging while making new friends.
         </Container>
         </div>
         </div>
-        <div className="section content-center  text-center">
-        <video autoPlay muted loop
-        style={{ 
-      width:"100%",
-      border:"0",
-      height:"100%",
-      objectFit:'cover',
-     zIndex:"-2"
-      
-    }}
-        >
-        <source src={vid} type="video/mp4"/>
-        </video>
-          
-        
-        
-          
-            <h1 >Mission</h1>
-            <h3>
-            Inclusivity with Equality</h3>
-            
-            
-         
-        
-           
-      
-        </div>
 
-      
-        
+        <div>
+       
+        <h1 className="presentation-title text-center" style={{backgroundColor: "#ee9617",
+          backgroundImage: "linear-gradient(315deg, #ee9617 0%, #fe5858 74%)", textDecoration:"underline"
+          }}>NEWS</h1>
+         
+        <br/><br/>
+        <CardColumns>
+        <Card style={{width: '20rem'}}>
+    <CardImg top src={require("assets/img/Media/Indian Graffiti.png")} alt="..." />
+    <CardBody>
+        <CardText>Some quick example text to build on the card title and make up the bulk of the card's content</CardText>
+    </CardBody>
+</Card>
+<Card  style={{width: '20rem'}}>
+    <CardImg top src={require("assets/img/Media/Newz Hook.png")} alt="..." />
+    <CardBody>
+        <CardText>Love Actually.me is a new venture that aims to change that. This two-month-old venture is the brainchild of three people, Tanushree Sharma, Rajneesh Sharma and Krishna Parulekar.</CardText>
+        <CardLink href="https://newzhook.com/story/20410/">See more</CardLink>
+    </CardBody>
+</Card>
+<Card style={{width: '20rem'}}>
+    <CardImg top src={require("assets/img/Media/socio-story-blue.png")} alt="..." />
+    <CardBody>
+        <CardText> Tanushree, said, “One of the main issues is lack of communication and preconceived notions about PWDs.</CardText>
+   <CardLink href="https://sociostory.org/impact-stories/a-platform-for-people-with-disabilities-to-be-out-and-about">see more</CardLink>
+        </CardBody>
+</Card>
+<Card style={{width: '20rem'}}>
+    <CardImg top src={require("assets/img/Media/Startocure.webp")} alt="..." />
+    <CardBody>
+        <CardText>Some quick example text to build on the card title and make up the bulk of the card's content</CardText>
+    </CardBody>
+</Card>
+<Card style={{width: '20rem'}}>
+    <CardImg top src={require("assets/img/Media/YourStory.png")} alt="..." />
+    <CardBody>
+        <CardText>LoveActuallyMe पीडबल्यूडी समुदाय के लिए अब एक खास ऐप लाने की तैयारी में है,
+        </CardText>
+        <CardLink href="https://yourstory.com/hindi/loveactuallyme-pwd-community-matchmaking-app">see more</CardLink>
+    </CardBody>
+</Card>
+</CardColumns>
+        </div>
       </div>
      
     </>

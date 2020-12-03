@@ -12,17 +12,14 @@ import DemoFooter from "components/Footers/DemoFooter.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
-import News from "views/examples/News";
+
 // others
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/index" render={(props) => <LandingPage {...props} />} />
-      <Route
-        path="/news"
-        render={(props) => <News {...props} />}
-      />
+     
       <Route
         path="/footer"
         render={(props) => <DemoFooter {...props} />}

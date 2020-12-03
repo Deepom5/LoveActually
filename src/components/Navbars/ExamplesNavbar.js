@@ -95,12 +95,6 @@ function ExamplesNavbar() {
             </NavLink>
           </NavItem>
 
-          <NavItem>
-              <NavLink to="/news" tag={Link}>
-                 News
-              </NavLink>
-            </NavItem>
-
             <NavItem>
             <NavLink to="/events" tag={Link}>
                Events

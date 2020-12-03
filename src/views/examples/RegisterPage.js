@@ -71,17 +71,16 @@ function RegisterPage() {
     <>
       <ExamplesNavbar />
       <div
-        className="page-header"
-        style={{
-          backgroundImage: "url(" + require("assets/img/federico-beccari.jpg") + ")",
-        }}
+       
       >
       
-      <UncontrolledCarousel items={carouselItems} />
+     
       </div>
         <div className="filter" />
         <Container>
-        <br/><br/><br/><br/><br/><br/>
+        <br/><br/>
+        <UncontrolledCarousel items={carouselItems} />
+        <br/><br/><br/><br/>
         <h1 className="title"><strong>Events</strong></h1><br/>
           <Row>
           <CardDeck>
