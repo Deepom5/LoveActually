@@ -210,7 +210,8 @@ encouraging while making new friends.
         <Card style={{width: '20rem'}}>
     <CardImg top src={require("assets/img/Media/Indian Graffiti.png")} alt="..." />
     <CardBody>
-        <CardText>Some quick example text to build on the card title and make up the bulk of the card's content</CardText>
+        <CardText>Tanushree Sharma – Empowering people with disability on social & professional front!</CardText>
+        <CardLink href="https://www.indiangraffiti.com/loveactually/">See more</CardLink>
     </CardBody>
 </Card>
 <Card  style={{width: '20rem'}}>
