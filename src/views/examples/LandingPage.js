@@ -214,6 +214,14 @@ encouraging while making new friends.
         <CardLink href="https://www.indiangraffiti.com/loveactually/">See more</CardLink>
     </CardBody>
 </Card>
+<Card style={{width: '20rem'}}>
+    <CardImg top src={require("assets/img/Media/YourStory.png")} alt="..." />
+    <CardBody>
+        <CardText>LoveActuallyMe पीडबल्यूडी समुदाय के लिए अब एक खास ऐप लाने की तैयारी में है,
+        </CardText>
+        <CardLink href="https://yourstory.com/hindi/loveactuallyme-pwd-community-matchmaking-app">see more</CardLink>
+    </CardBody>
+</Card>
 <Card  style={{width: '20rem'}}>
     <CardImg top src={require("assets/img/Media/Newz Hook.png")} alt="..." />
     <CardBody>
@@ -229,14 +237,7 @@ encouraging while making new friends.
         </CardBody>
 </Card>
 
-<Card style={{width: '20rem'}}>
-    <CardImg top src={require("assets/img/Media/YourStory.png")} alt="..." />
-    <CardBody>
-        <CardText>LoveActuallyMe पीडबल्यूडी समुदाय के लिए अब एक खास ऐप लाने की तैयारी में है,
-        </CardText>
-        <CardLink href="https://yourstory.com/hindi/loveactuallyme-pwd-community-matchmaking-app">see more</CardLink>
-    </CardBody>
-</Card>
+
 </CardColumns>
 </Container>
         </div>
