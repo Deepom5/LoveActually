@@ -228,12 +228,7 @@ encouraging while making new friends.
    <CardLink href="https://sociostory.org/impact-stories/a-platform-for-people-with-disabilities-to-be-out-and-about">see more</CardLink>
         </CardBody>
 </Card>
-<Card style={{width: '20rem'}}>
-    <CardImg top src={require("assets/img/Media/Startocure.webp")} alt="..." />
-    <CardBody>
-        <CardText>Some quick example text to build on the card title and make up the bulk of the card's content</CardText>
-    </CardBody>
-</Card>
+
 <Card style={{width: '20rem'}}>
     <CardImg top src={require("assets/img/Media/YourStory.png")} alt="..." />
     <CardBody>
