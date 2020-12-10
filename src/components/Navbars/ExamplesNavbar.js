@@ -62,7 +62,7 @@ function ExamplesNavbar() {
           >
           <img
           style={{height:'70px'}}
-          src="/logo(2).png"
+          src="/logo.png"
         />
           </NavbarBrand>
           <button
