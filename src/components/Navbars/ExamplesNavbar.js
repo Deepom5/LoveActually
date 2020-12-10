@@ -57,7 +57,7 @@ function ExamplesNavbar() {
             data-placement="bottom"
             to="/index"
             target="_blank"
-            title="Coded by Creative Tim"
+            title="Coded by Deepom"
             tag={Link}
           >
           <img
@@ -107,7 +107,7 @@ function ExamplesNavbar() {
             </NavLink>
           </NavItem>
           <NavItem>
-              <NavLink to="/index" tag={Link}>
+              <NavLink to="/blog" tag={Link}>
                  Blog
               </NavLink>
 

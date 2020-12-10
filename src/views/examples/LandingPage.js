@@ -1,6 +1,5 @@
 
 import React from "react";
-import vid from "../../assets/img/Ed Sheeran - Beautiful People (feat. Khalid) [Official Lyric Video] (online-video-cutter.com).mp4"
 // reactstrap components
 import {
   Button,
@@ -154,40 +153,40 @@ encouraging while making new friends.
           
             </Row>
           </Container>
-    
-        <div className="section content-center  text-center">
-        <video autoPlay muted loop
-        style={{ 
-      width:"100%",
-      border:"0",
-      height:"100%",
-      objectFit:'cover',
-     zIndex:"-2",
-     
-      
-    }}
-        >
-        <source src={vid} type="video/mp4"/>
-        </video>
-          
-        
-        
-          
-            <h1  style={{position:"absolute", top:"35%",left:"35%",color: "#1f1c1c", backgroundColor: "#f2f2f2", fontSize: "7vw", lineHeight: "7vw", fontWeight: "700", margin: "0 5px 24px", float: "left", padding: "10px", margin:" 0 5px 24px",  }}>MISSION</h1>
-            <h3 style={{position:"absolute", top:"45%",left:"30%",fontSize: "4vw", fontWeight: "300",backgroundColor: "#f2f2f2"}}>
-            Inclusivity with Equality</h3>
+          </div>
+        <div  className="section  section-nucleo-icons">
+        <Container>
+        <Row>
+          <Col lg="5" md="12">
+          <br/><br/><br/>
+            <h1 className="title" style={{color: "#1f1c1c", backgroundColor: "#f2f2f2", fontSize: "7vw", lineHeight: "7vw", fontWeight: "700", padding: "10px", margin:" 0 5px 24px",}}>  Misson</h1>
             
+            <h3 style={{fontSize: "2.5vw", fontWeight: "300",backgroundColor: "black",color:"white"}} className="description">
+              Inclusivity with Equality
+            </h3>
+            <br />
+            
+          </Col>
+          <Col lg="7" md="12">
+          <img
+          alt="..."
+          className="img-rounded img-responsive"
+          src={require("assets/img/pexels-karolina-grabowska-4041390(1).jpg")}
+        />
+          </Col>
+        </Row>
+      </Container>  
             </div>
 
-      
-            </div>
+      <br/>
+            
         <div
         style={{
           backgroundImage:
             "url(" + require("assets/img/pexels-elizaveta-dushechkina-3727149.jpg") + ")",
-          backgroundAttachment:"fixed"
+          backgroundAttachment:"fixed",height:"45vh", backgroundSize:"cover"
         }}        
-        className="section filter page-header content-center">
+        className="section filter  content-center">
         <div className="title-brand">
         <Container>
         <h1 className="presentation-title">Vision</h1>
@@ -197,7 +196,7 @@ encouraging while making new friends.
         </Container>
         </div>
         </div>
-
+<br/><br/>
         <div>
        
         <h1 className="presentation-title text-center" style={{backgroundColor: "#ee9617",

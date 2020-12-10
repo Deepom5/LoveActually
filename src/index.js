@@ -12,7 +12,7 @@ import DemoFooter from "components/Footers/DemoFooter.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
-
+import Blog from "views/examples/Blog"
 // others
 
 ReactDOM.render(
@@ -23,6 +23,10 @@ ReactDOM.render(
       <Route
         path="/footer"
         render={(props) => <DemoFooter {...props} />}
+      />
+      <Route
+        path="/blog"
+        render={(props) => <Blog {...props} />}
       />
       <Route
         path="/about"

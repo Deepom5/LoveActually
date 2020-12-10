@@ -53,7 +53,7 @@ function ProfilePage() {
             <div className="name">
            
               <h2 className="title">About Us</h2>
-              <br/><br/>
+              
             </div>
           </div>
           <Row>
@@ -206,6 +206,42 @@ LoveActually.me is one of the first platforms for people with disabilities to ma
                     </Col>
                   </Row>
                 </li>
+                <hr/>
+                <li>
+                <Row>
+                  <Col className="ml-auto mr-auto" lg="2" md="4" xs="4">
+                    <img
+                      alt="..."
+                      className="img-circle img-no-padding img-responsive"
+                      src={require("assets/img/faces/LA/Shagun Pathak.jpg")}
+                    />
+                  </Col>
+                  <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
+                    <h6>
+                    Shagun Pathak<br />
+                      <small>Tribe</small>
+                    </h6>
+                  </Col>
+                  <Col className="ml-auto mr-auto" lg="3" md="4" xs="4">
+                  <Button
+                  className="btn-just-icon btn-neutral ml-1"
+      
+                  href="https://www.facebook.com/shagun.pathak1"
+           
+                >
+                <i className="fa fa-facebook-square" />
+                </Button>
+                <Button
+                className="btn-just-icon btn-neutral ml-1"
+    
+                href=" https://www.linkedin.com/in/shagun-pathak-90757245"
+            
+              >
+                <i className="fa fa-linkedin" />
+              </Button>
+                  </Col>
+                </Row>
+              </li>
                 <hr/>
                 <li>
                 <Row>

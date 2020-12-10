@@ -1,9 +1,13 @@
 
-import React from "react";
+import React , { useState } from "react";
 
 // reactstrap components
 import {   Card,  CardTitle, CardText, CardDeck,
-  CardSubtitle, CardBody,Row, Container,UncontrolledCarousel } from "reactstrap";
+  CardSubtitle, CardBody,Row, Container, Carousel,
+  CarouselItem,
+  CarouselControl,
+  CarouselIndicators,
+  CarouselCaption } from "reactstrap";
 
 // core components
 
@@ -13,73 +17,116 @@ import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 
 
 //function carosel
-const carouselItems = [
+const items = [
   {src:
-   "https://i.ibb.co/yXbhm5J/picb.jpg",
-      altText: "Slide 1",
-    caption: ""
-  },
-  {src:
-  "https://i.ibb.co/WHV8ShR/9.jpg",
-      altText: "Slide 2",
-    caption: ""
-  },
-  {src:
-    "https://i.ibb.co/rynR0WS/7.jp",
-        altText: "Slide 3",
-      caption: ""
-    },
-    {src:
-      "https://i.ibb.co/3N266Vz/pica.jpg",
-          altText: "Slide 4",
-        caption: ""
-      },
-      {src:
-        "https://i.ibb.co/CPvypLc/8.jpg",
-            altText: "Slide 5",
-          caption: ""
-        },
-        {src:
-          "https://i.ibb.co/Mks2PT7/picc.jpg",
-              altText: "Slide 6",
-            caption: ""
-          },
-          {src:
-            "https://i.ibb.co/3dt50Kw/picd.jpg",
-                altText: "Slide 7",
-              caption: ""
-            },
-            {src:
-              "https://i.ibb.co/7RmLLGM/pice.jpg",
-                  altText: "Slide 8",
-                caption: ""
-              },
-              {src:
-                "https://i.ibb.co/XtwW1h1/picf.jpg",
-                    altText: "Slide 9",
-                  caption: ""
-                },
-                                
+    "/iGNiTE 1/picb.jpg",
+       altText: "Slide 1",
+     caption: ""
+   },
+   {src:
+   "/iGNiTE 1/9.jpg",
+       altText: "Slide 2",
+     caption: ""
+   },
+   {src:
+     "/iGNiTE 1/7.jpg",
+         altText: "Slide 3",
+       caption: ""
+     },
+     {src:
+       "/iGNiTE 1/pica.jpg",
+           altText: "Slide 4",
+         caption: ""
+       },
+       {src:
+         "/iGNiTE 1/8.jpg",
+             altText: "Slide 5",
+           caption: ""
+         },
+         {src:
+           "/iGNiTE 1/picc.jpg",
+               altText: "Slide 6",
+             caption: ""
+           },
+           {src:
+             "/iGNiTE 1/picd.jpg",
+                 altText: "Slide 7",
+               caption: ""
+             },
+             {src:
+               "/iGNiTE 1/pice.jpg",
+                   altText: "Slide 8",
+                 caption: ""
+               },
+               {src:
+                 "/iGNiTE 1/picf.jpg",
+                     altText: "Slide 9",
+                   caption: ""
+                 },
 ];
+
 
 
 
 function RegisterPage() {
  
- 
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [animating, setAnimating] = useState(false);
+
+  const next = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  }
+
+  const previous = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+    setActiveIndex(nextIndex);
+  }
+
+  const goToIndex = (newIndex) => {
+    if (animating) return;
+    setActiveIndex(newIndex);
+  }
+
+  const slides = items.map((item) => {
+    return (
+      <CarouselItem
+        onExiting={() => setAnimating(true)}
+        onExited={() => setAnimating(false)}
+        key={item.src}
+      >
+        <img src={item.src} alt={item.altText} />
+        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+      </CarouselItem>
+    );
+  });
   return (
     <>
       <ExamplesNavbar />
       <div
-       
+     
+      style={{
+        backgroundImage: "url(" + require("assets/img/login-image.jpg") + ")",
+      }}
       >
-      
+      <Carousel
+          activeIndex={activeIndex}
+          next={next}
+          previous={previous}
+        >
+          <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+          {slides}
+          <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+          <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+        </Carousel>
      
       </div>
         <div className="filter" />
         <Container>
         <br/><br/>
-        <UncontrolledCarousel items={carouselItems} />
+        
         <br/><br/><br/><br/>
         <h1 className="title"><strong>Events</strong></h1><br/>
           <Row>
