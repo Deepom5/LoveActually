@@ -18,7 +18,9 @@ function DemoFooter() {
     <footer className="footer footer-black footer-white">
       <Container>
 
-
+      <h2 style={{color:"black"}} className="presentation-subtitle text-center">
+      Your Feedbacks Matter to us
+     </h2>
        
        <div className="section landing-section">
           <Container>

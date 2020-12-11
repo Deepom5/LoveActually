@@ -110,7 +110,7 @@ function ExamplesNavbar() {
  
                <NavItem>
                <NavLink to="/footer" tag={Link}>
-                  Contacts
+                  Contact
                </NavLink>
              </NavItem> 
                </Nav>
