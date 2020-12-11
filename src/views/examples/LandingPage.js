@@ -161,7 +161,7 @@ encouraging while making new friends.
           <br/><br/><br/>
             <h1 className="title" style={{color: "#1f1c1c", backgroundColor: "#f2f2f2", fontSize: "7vw", lineHeight: "7vw", fontWeight: "700", padding: "10px", margin:" 0 5px 24px",}}>  Misson</h1>
             
-            <h3 style={{fontSize: "2.5vw", fontWeight: "300",backgroundColor: "black",color:"white"}} className="description">
+            <h3 style={{fontSize: "4vh", fontWeight: "300",backgroundColor: "black",color:"white"}} className="description">
               Inclusivity with Equality
             </h3>
             <br />
@@ -178,24 +178,32 @@ encouraging while making new friends.
       </Container>  
             </div>
 
-      <br/>
+      
             
-        <div
-        style={{
-          backgroundImage:
-            "url(" + require("assets/img/pexels-elizaveta-dushechkina-3727149.jpg") + ")",
-          backgroundAttachment:"fixed",height:"45vh", backgroundSize:"cover"
-        }}        
-        className="section filter  content-center">
-        <div className="title-brand">
-        <Container>
-        <h1 className="presentation-title">Vision</h1>
-        <h2 className="presentation-subtitle text-center">
-        Bringing Behavioral Change
-      </h2>
-        </Container>
-        </div>
-        </div>
+      <div  className="section  section-nucleo-icons">
+      <Container>
+      <Row>
+      <Col lg="7" md="12">
+      <img
+      alt="..."
+      className="img-rounded img-responsive"
+      src={require("assets/img/pexels-pixabay-355952.jpg")}
+    />
+      </Col>
+        <Col lg="5" md="12">
+        <br/><br/><br/>
+          <h1 className="title" style={{color: "#1f1c1c", backgroundColor: "#f2f2f2", fontSize: "7vw", lineHeight: "7vw", fontWeight: "700", padding: "10px", margin:" 0 5px 24px",}}>Vision</h1>
+          
+          <h3 style={{fontSize: "4vh", fontWeight: "300",backgroundColor: "black",color:"white"}} className="description">
+          Bringing Behavioral Change
+          </h3>
+          <br />
+          
+        </Col>
+       
+      </Row>
+    </Container>  
+          </div>
 <br/><br/>
         <div>
        

@@ -56,7 +56,7 @@ function ExamplesNavbar() {
           <NavbarBrand
             data-placement="bottom"
             to="/index"
-            target="_blank"
+           
             title="Coded by Deepom"
             tag={Link}
           >
@@ -101,19 +101,19 @@ function ExamplesNavbar() {
             </NavLink>
           </NavItem>
 
-          <NavItem>
-            <NavLink to="/footer" tag={Link}>
-               Contacts
-            </NavLink>
-          </NavItem>
+        
           <NavItem>
               <NavLink to="/blog" tag={Link}>
                  Blog
               </NavLink>
-
-              
-            </NavItem>
-          </Nav>
+               </NavItem>
+ 
+               <NavItem>
+               <NavLink to="/footer" tag={Link}>
+                  Contacts
+               </NavLink>
+             </NavItem> 
+               </Nav>
         </Collapse>
       </Container>
     </Navbar>

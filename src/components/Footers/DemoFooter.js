@@ -4,11 +4,8 @@ import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 // reactstrap components
 import {   Button,
-  Form,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
+  Card, CardImg, CardTitle, CardText, CardDeck,
+  CardSubtitle, CardBody,
   Col,
   Row, Container } from "reactstrap";
 
@@ -28,45 +25,26 @@ function DemoFooter() {
             <Row>
               <Col className="ml-auto mr-auto" md="8">
                 <h2 className="text-center">Keep in touch?</h2>
-                <Form className="contact-form">
-                  <Row>
-                    <Col md="6">
-                      <label>Name</label>
-                      <InputGroup>
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="nc-icon nc-single-02" />
-                          </InputGroupText>
-                        </InputGroupAddon>
-                        <Input placeholder="Name" type="text" />
-                      </InputGroup>
-                    </Col>
-                    <Col md="6">
-                      <label>Email</label>
-                      <InputGroup>
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="nc-icon nc-email-85" />
-                          </InputGroupText>
-                        </InputGroupAddon>
-                        <Input placeholder="Email" type="text" />
-                      </InputGroup>
-                    </Col>
-                  </Row>
-                  <label>Message</label>
-                  <Input
-                    placeholder="Tell us your thoughts and feelings..."
-                    type="textarea"
-                    rows="4"
-                  />
-                  <Row>
-                    <Col className="ml-auto mr-auto" md="4">
-                      <Button className="btn-fill" color="danger" size="lg">
-                        Send Message
-                      </Button>
-                    </Col>
-                  </Row>
-                </Form>
+                <CardDeck>
+                <Card >
+                
+              <CardBody>
+                
+                <CardSubtitle tag="h6" className="mb-2 text-muted">Support</CardSubtitle>
+                <CardText>Intrested to know more , Contact us at..</CardText>
+                <Button color="info" href="tel:+917718096106">7718096106</Button>
+              </CardBody>
+            </Card>
+            <Card >
+                
+            <CardBody>
+             
+              <CardSubtitle tag="h6" className="mb-2 text-muted">Feedback</CardSubtitle>
+              <CardText>Give us your feedback and curiosity  at..</CardText>
+              <Button color="info" href="mailto: hola@loveactually.me">hola@loveactually.me</Button>
+            </CardBody>
+          </Card>
+                </CardDeck>
               </Col>
             </Row>
             <row>

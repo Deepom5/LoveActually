@@ -285,7 +285,7 @@ LoveActually.me is one of the first platforms for people with disabilities to ma
                   <img
                     alt="..."
                     className="img-circle img-no-padding img-responsive"
-                    src={require("assets/img/faces/female.jpg")}
+                    src={require("assets/img/faces/LA/Anjali Gulati.jpg")}
                   />
                 </Col>
                 <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
@@ -321,7 +321,7 @@ LoveActually.me is one of the first platforms for people with disabilities to ma
                 <img
                   alt="..."
                   className="img-circle img-no-padding img-responsive"
-                  src={require("assets/img/faces/male.jpg")}
+                  src={require("assets/img/faces/LA/prnay makija.jpeg")}
                 />
               </Col>
               <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
@@ -401,7 +401,7 @@ LoveActually.me is one of the first platforms for people with disabilities to ma
                 <img
                   alt="..."
                   className="img-circle img-no-padding img-responsive"
-                  src={require("assets/img/faces/female.jpg")}
+                  src={require("assets/img/faces/LA/Jasmina Khanna.jpg")}
                 />
               </Col>
               <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
