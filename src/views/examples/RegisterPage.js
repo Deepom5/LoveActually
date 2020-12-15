@@ -108,7 +108,7 @@ function RegisterPage() {
       <div
      
       style={{
-        backgroundImage: "url(" + require("assets/img/login-image.jpg") + ")",
+        backgroundImage: "url(" + require("assets/img/login-image.jpg") + ")", height:"auto"
       }}
       >
       <Carousel
@@ -125,9 +125,9 @@ function RegisterPage() {
       </div>
         <div className="filter" />
         <Container>
-        <br/><br/>
         
-        <br/><br/><br/><br/>
+        
+       <br/><br/><br/>
         <h1 className="title"><strong>Events</strong></h1><br/>
           <Row>
           <CardDeck>

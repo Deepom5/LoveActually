@@ -14,14 +14,15 @@ import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import Blog from "views/examples/Blog"
 // others
-
+import ScrollToTop from 'ScrollToTop';
 ReactDOM.render(
   <BrowserRouter>
+  <ScrollToTop>
     <Switch>
       <Route path="/index" render={(props) => <LandingPage {...props} />} />
      
       <Route
-        path="/footer"
+        path="/contact"
         render={(props) => <DemoFooter {...props} />}
       />
       <Route
@@ -38,6 +39,7 @@ ReactDOM.render(
       />
       <Redirect to="/index" />
     </Switch>
+    </ScrollToTop>
   </BrowserRouter>,
   document.getElementById("root")
 );

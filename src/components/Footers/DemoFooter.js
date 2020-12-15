@@ -12,18 +12,17 @@ import {   Button,
 function DemoFooter() {
   return (
     <>
-    <ExamplesNavbar/>
+    <ExamplesNavbar style={{backgroundColor:"black"}} />
 
-    <IndexHeader/>
-    <footer className="footer footer-black footer-white">
-      <Container>
-
-      <h2 style={{color:"black"}} className="presentation-subtitle text-center">
-      Your Feedbacks Matter to us
-     </h2>
-       
+    <div style={{
+      backgroundImage:
+        "url(" + require("assets/img/contact-and-information-EVWR64H.jpg") + ")",backgroundSize:"100% 100%",backgroundRepeat:"no-repeat",backgroundColor:"#D3D3D3",height:"37vw",width:"100%" 
+    }}></div>
+    
+    
        <div className="section landing-section">
           <Container>
+          
             <Row>
               <Col className="ml-auto mr-auto" md="8">
                 <h2 className="text-center">Keep in touch?</h2>
@@ -50,17 +49,7 @@ function DemoFooter() {
               </Col>
             </Row>
             <row>
-            <nav className="footer-nav">
-            <ul>
-              <li>
-              <h4>Contact: <a>7718096106</a></h4>
-              </li>
-              <li>
-              <h4>Email: <a>hi@loveactually.me</a></h4>
-              </li>
-              
-            </ul>
-          </nav>
+           <br/>
           <div className="credits ml-auto">
             <span  className="copyright"><a href="https://www.linkedin.com/in/deepom-chowdhury-7b3651200/">
               © {new Date().getFullYear()}, made 
@@ -72,8 +61,8 @@ function DemoFooter() {
           </Container>
         </div>
      
-      </Container>
-    </footer>
+      
+   
     </>
   );
 }

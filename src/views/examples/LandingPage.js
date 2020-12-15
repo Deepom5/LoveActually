@@ -214,14 +214,14 @@ encouraging while making new friends.
         <br/><br/>
         <Container>
         <CardColumns>
-        <Card style={{width: '20rem'}}>
+        <Card >
     <CardImg top src={require("assets/img/Media/Indian Graffiti.png")} alt="..." />
     <CardBody>
         <CardText>Tanushree Sharma – Empowering people with disability on social & professional front!</CardText>
         <CardLink href="https://www.indiangraffiti.com/loveactually/">See more</CardLink>
     </CardBody>
 </Card>
-<Card style={{width: '20rem'}}>
+<Card >
     <CardImg top src={require("assets/img/Media/YourStory.png")} alt="..." />
     <CardBody>
         <CardText>LoveActuallyMe पीडबल्यूडी समुदाय के लिए अब एक खास ऐप लाने की तैयारी में है,
@@ -229,14 +229,14 @@ encouraging while making new friends.
         <CardLink href="https://yourstory.com/hindi/loveactuallyme-pwd-community-matchmaking-app">see more</CardLink>
     </CardBody>
 </Card>
-<Card  style={{width: '20rem'}}>
+<Card  >
     <CardImg top src={require("assets/img/Media/Newz Hook.png")} alt="..." />
     <CardBody>
         <CardText>Love Actually.me is a new venture that aims to change that. This two-month-old venture is the brainchild of three people, Tanushree Sharma, Rajneesh Sharma and Krishna Parulekar.</CardText>
         <CardLink href="https://newzhook.com/story/20410/">See more</CardLink>
     </CardBody>
 </Card>
-<Card style={{width: '20rem'}}>
+<Card >
     <CardImg top src={require("assets/img/Media/socio-story-blue.png")} alt="..." />
     <CardBody>
         <CardText> Tanushree, said, “One of the main issues is lack of communication and preconceived notions about PWDs.</CardText>
