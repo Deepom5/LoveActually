@@ -129,7 +129,7 @@ function RegisterPage() {
         
        <br/><br/><br/>
         <h1 className="title"><strong>Events</strong></h1><br/>
-          <Row>
+         
           <CardDeck>
           <Card>
             
@@ -169,7 +169,7 @@ function RegisterPage() {
         </Card>
         
         </CardDeck>
-          </Row>
+        
           <br/><br/>
         </Container>
        
